@@ -1,0 +1,315 @@
+/* -------------------------------- IMPORT -------------------------------- */
+@font-face {
+    font-family: "Reddit Mono", monospace;
+    src: url('/fonts/"Reddit Mono", monospace.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&display=swap');
+
+/* -------------------------------- MAIN CSS -------------------------------- */
+html {
+    font-family: "Reddit Mono", monospace;
+    background-color: white;
+}
+body {
+    margin: 0;
+    font-family: "Reddit Mono", monospace;
+    text-transform: lowercase !important;
+    font-weight: 800 !important;
+    height: auto;
+    width: 100%;
+}
+h1 {
+    font-size: 6vh;
+}
+h2 {
+    font-size: 4vh;
+}
+h3 {
+    font-size: 2vh;
+}
+h4 {
+    font-size: 2vh;
+}
+a {
+    text-decoration: underline;
+    color: #bcca84;
+    cursor: pointer !important;
+}
+a:hover {
+    text-decoration: underline;
+    color: #505e2c;
+}
+li {
+    font-size: 3vh;
+    font-weight: 300;
+}
+/* -------------------------------- SECTIONS -------------------------------- */
+#intro {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+#about {
+    background-color: #001600;
+    min-height: 100vh;
+}
+#experience {
+    background-color: #001600;
+    border: white 0.3vh solid;
+    border-radius: 3vh;
+    padding: 2vh;
+}
+#projects {
+    background-color: white;
+    color: black;
+    height: auto;
+}
+#cover-letter {
+    background-color: white;
+    color: #1c1919;
+    height: auto;
+}
+/* -------------------------------- GENERAL -------------------------------- */
+#text {
+    font-size: 10vh;
+    color: rgb(255, 255, 255);
+    z-index: 50;
+    width: 70%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* begin */
+.wrapper {
+    background-color: rgb(0, 8, 35);
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background {
+    transform: translateZ(-10px) scale(2.5);
+}  
+.foreground {
+    transform: translateZ(-5px) scale(1.5);
+}
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+section {
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
+/* done */
+.container {
+    margin: auto;
+    width: 70%;
+    padding: 70px 0;
+    height: 100%;
+}
+.dates {
+    font-family: "Reddit Mono", monospace;
+}
+.dates-box {
+    display: block;
+    background-color: white;
+    border: white 0.3vh solid;
+    border-radius: 3vh;
+    color: #001600;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.divider {
+    border-top: 0.3vh white solid;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.email-link {
+    color: white;
+}
+.email-link:hover {
+    color: white;
+    text-decoration: underline !important;
+}
+
+.job-title {
+    font-weight: bolder !important;
+}
+.special-link {
+    text-decoration: underline !important;
+}
+/* -------------------------------- RESPONSIVE -------------------------------- */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4vh;
+    }
+    h2 {
+        font-size: 4vh;
+    }
+    h3 {
+        font-size: 3vh;
+    }
+    h4 {
+        font-size: 2vh;
+    }
+    li {
+        font-size: 2vh;
+    }
+    #text {
+        font-size: 6vh;
+    }
+    .parent {
+        display: none !important;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+    }
+    .col-sm-4 {
+        width: 100%;
+    }
+    .col-sm-8 {
+        width: 100%;
+    }
+    .container {
+        width: 85%;
+    }
+    .project-button {
+        font-size: 2.5vh !important;
+    }
+    h2, .dates {
+        font-size: 2.5vh !important;
+    }
+}
+/* -------------------------------- BUTTONS -------------------------------- */
+.project-button {
+    display: block;
+    border: 0.3vh white solid;
+    background-color: #001600;
+    font-family: "Reddit Mono", monospace;
+    font-size: 4vh;
+    text-align: center;
+    color: white;
+    padding: 2vh;
+    margin-top: 3vh;
+    border-radius: 3vh;
+}
+.project-button, a {
+    text-decoration: none !important;
+}
+.project-button:hover {
+    background-color: white;
+    color: black;
+}
+.button-cover {
+    color: white;
+    display: block;
+    border: 10px white solid;
+    background-color: none;
+    padding: 20px;
+}
+.button-cover:hover {
+    color: black;
+    background-color: white;
+    border: 10px white solid;
+}
+/* -------------------------------- MARQUEE -------------------------------- */
+marquee {
+    color: #1c1919 solid;
+    font-size: 8vh;
+    z-index: 100px;
+}
+.marquee-experience {
+    font-family: "Reddit Mono", monospace;
+    border-left: none;
+    border-right: none;
+    border-top: 10px white solid;
+    border-bottom: 10px white solid;
+    background-color: black;
+}
+.marquee-project {
+    font-family: "Micro 5 Charted";
+    border: 10px #1c1919 solid;
+    background-color: #ffa669;
+}
+/* -------------------------------- CLOUD -------------------------------- */
+.parent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.parent > div {
+    position: absolute;
+    top: 0;
+}
+.child1 { 
+    width: 40vw;
+    height: 80vh;
+}
+.child3 {
+    z-index: 0;
+}
+.child2 > div {
+    position: absolute;
+}
+.child2-one {
+    width: 200px;
+    height: 100px;
+    top: 70px;
+    left: -1000px;
+    z-index: 100;
+}
+.child2-two {
+    width: 200px;
+    height: 250px;
+    top: 50px;
+    left: 175px;
+}
+.child2-three {
+    width: 100px;
+    height: 75px;
+    top: 500px;
+    left: 0;
+    z-index: 100;
+}
+.child2-forest {
+    width: 100%;
+    height: auto;
+    top: 1500px !important;
+    z-index: 0;
+}
+.noisy {
+  background-image: url(data:image/png;base64,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);  
+} 
+.highlight {
+    display: inline-block;
+    background-color: none;
+    color: #bcca84;
+}
